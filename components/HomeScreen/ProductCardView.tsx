@@ -41,7 +41,6 @@ const ProductCardView: React.FC = () => {
     axios
       .request(options)
       .then(function (response: AxiosResponse<MenuItem>) {
-    
         setMenuItems([response.data]);
       })
       .catch(function (error) {
@@ -74,7 +73,7 @@ const ProductCardView: React.FC = () => {
           data={menuItems}
           keyExtractor={item => item.id.toString()}
           renderItem={({item}) => (
-            <View
+            <TouchableOpacity
               style={{
                 height: 250,
                 width: cardWidth,
@@ -131,7 +130,7 @@ const ProductCardView: React.FC = () => {
                 </View>
                 <Icon name="favorite" size={25} color={'red'} />
               </View>
-            </View>
+            </TouchableOpacity>
           )}
         />
       </ScrollView>

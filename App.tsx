@@ -1,11 +1,7 @@
 import React from 'react';
-import MainContainer from './components/Container/MainContainer';
-import LoginScreen from './screens/LoginScreen';
+
+import MainNav from './components/navigation/MainNav';
 
 export default function App() {
-  return (
-    <MainContainer>
-      <LoginScreen />
-    </MainContainer>
-  );
+  return <MainNav />;
 }

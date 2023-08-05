@@ -9,4 +9,5 @@ export const colors = {
   light: '#E5E5E5',
   grey: '#908e8c',
   mainOrange: '#FF5E0E',
+  catColor: '#D0F0C0',
 };

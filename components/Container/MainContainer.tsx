@@ -8,8 +8,6 @@ const StyledView = styled.View`
   padding: 25px;
   padding-top: 40px;
   background: ${colors.primary};
-  justify-content: center;
-  align-items: center;
 `;
 
 const MainContainer: FunctionComponent<ContainerProps> = props => {

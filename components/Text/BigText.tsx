@@ -7,6 +7,8 @@ const StyledText = styled.Text`
   font-size: 30px;
   color: ${colors.black};
   text-align: left;
+  font-weight: bold;
+  margin-left: 20px;
 `;
 
 const BigText: FunctionComponent<TextProps> = props => {

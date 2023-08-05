@@ -1,3 +1,5 @@
+/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -24,6 +26,7 @@ const BottomNavigator = () => {
         name="HomeScreen"
         component={HomeScreen}
         options={{
+          // eslint-disable-next-line react/no-unstable-nested-components
           tabBarIcon: ({color}) => (
             <Icon name="home-filled" color={color} size={28} />
           ),
@@ -43,7 +46,7 @@ const BottomNavigator = () => {
         name="Search"
         component={HomeScreen}
         options={{
-          tabBarIcon: ({color}) => (
+          tabBarIcon: () => (
             <View
               style={{
                 height: 60,

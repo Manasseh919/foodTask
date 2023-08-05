@@ -5,6 +5,7 @@ import {colors} from '../components/colors';
 import Header from '../components/HomeScreen/Header';
 import HomeText from '../components/HomeScreen/HomeText';
 import Categories from '../components/HomeScreen/Categories';
+import ProductCardView from '../components/HomeScreen/ProductCardView';
 
 const StyledView = styled.View`
   padding-top: 40px;
@@ -17,6 +18,8 @@ const HomeScreen = () => {
       <Header />
       <HomeText />
       <Categories />
+
+      <ProductCardView />
     </StyledView>
   );
 };

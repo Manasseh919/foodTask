@@ -7,6 +7,9 @@ import OctIcon from 'react-native-vector-icons/Octicons';
 import {colors} from '../colors';
 import {View} from 'react-native';
 import HomeScreen from '../../screens/HomeScreen';
+import Favorite from '../../screens/Favorite';
+import AlertScreen from '../../screens/AlertScreen';
+import Cart from '../../screens/Cart';
 
 const Tab = createBottomTabNavigator();
 
@@ -35,7 +38,7 @@ const BottomNavigator = () => {
       />
       <Tab.Screen
         name="Favorite"
-        component={HomeScreen}
+        component={Favorite}
         options={{
           tabBarIcon: ({color}) => (
             <Icon name="favorite-outline" color={color} size={28} />
@@ -67,7 +70,7 @@ const BottomNavigator = () => {
       />
       <Tab.Screen
         name="Alert"
-        component={HomeScreen}
+        component={AlertScreen}
         options={{
           tabBarIcon: ({color}) => (
             <OctIcon name="bell" color={color} size={28} />
@@ -76,7 +79,7 @@ const BottomNavigator = () => {
       />
       <Tab.Screen
         name="Cart"
-        component={HomeScreen}
+        component={Cart}
         options={{
           tabBarIcon: ({color}) => (
             <Icon name="add-shopping-cart" color={color} size={28} />
